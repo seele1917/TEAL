@@ -8,7 +8,7 @@ sys.path.append(os.path.join(parent_dir, 'utils'))
 import types
 from torch import nn
 
-from utils.utils import ActivationModule, Distribution, SparsifyFn, get_module_device
+from teal.utils import ActivationModule, Distribution, SparsifyFn, get_module_device
 
 
 def _monkeypatch_mlp(mlp, file_path, grabbing_mode=False):

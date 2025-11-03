@@ -25,11 +25,10 @@ from transformers.models.llama.configuration_llama import LlamaConfig
 
 from teal.mlp import _monkeypatch_mlp
 from teal.self_attn import _monkeypatch_self_attn
-from utils.eval_ppl import eval_ppl
 
 from transformers.configuration_utils import PretrainedConfig
 
-from utils.utils import ActivationModule, get_layer_greedy_sparsities
+from teal.utils import ActivationModule, get_layer_greedy_sparsities
 
 import types
 

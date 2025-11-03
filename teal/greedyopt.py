@@ -18,7 +18,7 @@ AutoConfig.register("llama_sparse", LlamaSparseConfig)
 AutoModelForCausalLM.register(LlamaSparseConfig, LlamaSparseForCausalLM)
 AutoConfig.register("mistral_sparse", MistralSparseConfig)
 AutoModelForCausalLM.register(MistralSparseConfig, MistralSparseForCausalLM)
-from utils.utils import get_sparse_model, get_tokenizer
+from teal.utils import get_sparse_model, get_tokenizer
 
 import torch.cuda
 

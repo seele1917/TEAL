@@ -16,7 +16,7 @@ sys.path.append(parent_dir)
 sys.path.append(os.path.join(parent_dir, 'utils'))
 
 
-from utils.utils import get_tokenizer, get_sparse_model
+from teal.utils import get_tokenizer, get_sparse_model
 
 from teal.model import LlamaSparseForCausalLM, LlamaSparseConfig
 from teal.model import MistralSparseForCausalLM, MistralSparseConfig
@@ -37,7 +37,7 @@ args = parser.parse_args()
 tokenizer = get_tokenizer(args.model_name)
 model = get_sparse_model(args.model_name, device="auto", histogram_path=os.path.join(args.output_path, "histograms"), grab_acts=True)
 
-from utils.data import get_dataset
+from teal.data import get_dataset
 from tqdm import tqdm
 import gc
 

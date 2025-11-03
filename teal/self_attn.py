@@ -14,7 +14,7 @@ from transformers.models.llama.modeling_llama import (
     apply_rotary_pos_emb,
 )
 
-from utils.utils import ActivationModule, Distribution, SparsifyFn, get_module_device
+from teal.utils import ActivationModule, Distribution, SparsifyFn, get_module_device
 
 from transformers.modeling_flash_attention_utils import _flash_attention_forward
 
